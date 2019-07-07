@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="544.277" height="1319.061" viewBox="0 0 544.277 1319.061">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.398" y1="1.079" x2="0.564" y2="0.037" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#38ef7d" stop-opacity="0.902"/>
+      <stop offset="1" stop-color="#11998e"/>
+    </linearGradient>
+    <filter id="Intersección_1" x="0" y="0" width="544.277" height="1319.061" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feFlood flood-opacity="0.576"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Intersección_1)">
+    <path id="Intersección_1-2" data-name="Intersección 1" d="M-394.624,1443.959c-270.1-165.247-349.86-410.563-132.044-655.537C-406.434,653.194-524.3,481.6-378.62,326.507c33.4-35.56,100.3-90.757,203.749-63.938v1244.9C-253.814,1503.69-329.75,1483.651-394.624,1443.959Z" transform="translate(685.65 -224.93)" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0.704" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

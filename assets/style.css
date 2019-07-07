@@ -1,0 +1,340 @@
+/* ========= GENERAL ========= */
+body{
+    //font-family: 'Montserrat', sans-serif;
+    //color: #3C4E59;
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 0.5rem 1.1rem;
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0.3rem 0.3rem 0.3rem rgba(8, 8, 8, 0.2);
+}
+
+.btn--primary{
+    background: #3C4E59;
+    color: #38EF7D;
+    font-weight: 400;
+    font-size: 0.8rem;
+    border-radius: 50px;
+}
+
+main{
+    padding: 0 8rem 0 8rem;
+}
+
+.title-seccion{
+    font-size: 3.5rem;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 1 0 0;
+}
+
+.center{
+    text-align: center;
+}
+
+.pb-40{
+    padding-bottom: 40px;
+}
+
+.pt-40{
+    padding-top: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ========= HEADER ========= */
+header{
+    height: 100vh;
+    display: flex;
+}
+
+.header__left{
+    flex: 0 0 70%;
+    position: relative;
+}
+
+.header__right{
+    flex: 0 0 30%;
+    position: relative;
+}
+
+.header__box{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translate(-40%,-50%);
+    width: 75%;
+    margin-left: 5rem;
+    z-index: 3;
+}
+
+.header__svg_left{
+    width: 100%;
+    top: 10%;
+    position: absolute;
+    left: -27%;
+}
+
+.header__svg_right{
+    width: 70%;
+    position: absolute;
+    right: 0;
+}
+
+.header__title{
+    font-size: 5.3rem;
+    margin: 0 0 1rem 0;
+}
+
+.header__profesion{
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 0 1rem 0;
+}
+
+.header__profesion:after{
+    content: '';
+    border-right: .2rem solid;
+    margin: 0 0 1rem 0;
+}
+
+.header__right__social_box{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+
+svg.svg_box{
+    width: 21px;
+    padding: .3rem 0 .3rem 0;
+}
+
+.svg_social{
+    fill: #F7F7F7;
+    width: 100%!important;
+}
+
+/* ========= SECCION ABOUT ========= */
+.seccion-about{
+    height: 100%;
+}
+
+.about{
+    text-align: right;
+    padding: 8rem 0 0 0;
+}
+
+.about__paragraph{
+    letter-spacing: 0.2rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+}
+
+.icon-skill-5{
+    width: 5rem;
+}
+
+.icon-skill-6{
+    width: 6rem;
+}
+
+.icon-skill-7{
+    width: 7rem;
+}
+
+.icon-skill-10{
+    width: 10rem;
+}
+
+/* ========= SECCION SERVICES ========= */
+.seccion-services{
+    min-height: 100vh;
+}
+
+.services{
+    text-align: left;
+    padding: 8rem 0 0 0;
+}
+
+.services__box{
+    display: flex;
+    justify-content: center;
+}
+
+.services__card{
+    width: 16rem;
+    height: 16rem;
+    margin: 0 2rem;
+    color: #3C4E59;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 35px;
+    transition: all .7s ease;
+}
+
+.services__card:hover{
+    background-color: #11998E;
+    color: #FFFF;
+    transform: translateY(-2rem);
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(8, 8, 8, 0.3);
+}
+
+.services__icon{
+    fill: #11998E;
+    transition: all .7s ease;
+}
+
+.services__card:hover .services__icon{
+    fill: #FFFF;
+}
+
+.services__title{
+    font-size: 1.2rem;
+}
+
+.services__description{
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+}
+
+.services__svg{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+/* ========= SECCION PROJECTS ========= */
+.projects{
+    text-align: right;
+    padding: 8rem 0 0 0;
+}
+
+.projects__works{
+    width: 90%;
+}
+
+.projects__svg{
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}
+
+
+/* ========= FOOTER ========= */
+
+footer{
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+
+/* ========= MOBILE ========= */
+@media (max-width: 768px) {
+
+    .header__svg_left {
+        width: 180%;
+        top: 30%;
+        left: -60%;
+    }
+
+    .header__box {
+        top: 40%;
+        margin-left: 0rem;
+    }
+
+    .header__title {
+        font-size: 4.3rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .header__profesion {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0 0 1rem 0;
+    }
+
+    .header__svg_right{
+        width: 120%;
+    }
+
+    .header__right__social_box{
+        right: 25px;
+        bottom: 25px;
+    }
+
+    main{
+        padding: 0 2.5rem 0 2.5rem;
+    }
+
+    .about {
+        text-align: center;
+        padding: 3rem 0 0 0;
+    }
+
+    .services {
+        text-align: center;
+        padding: 3rem 0 0 0;
+    }
+
+    .projects {
+        text-align: center;
+        padding: 3rem 0 0 0;
+    }
+
+    .services__box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services__card {
+        margin: 1.5rem 2rem;
+    }
+
+    .projects__svg{
+        height: 80%;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+    }
+
+    .sm{
+        flex: auto;
+    }
+}

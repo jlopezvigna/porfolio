@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1407.269" height="1231.73" viewBox="0 0 1407.269 1231.73">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.398" y1="1.079" x2="0.564" y2="0.037" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#38ef7d" stop-opacity="0.902"/>
+      <stop offset="1" stop-color="#11998e"/>
+    </linearGradient>
+    <filter id="Trazado_5" x="0" y="0" width="1407.269" height="1231.73" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feFlood flood-opacity="0.576"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Símbolo_10_2" data-name="Símbolo 10 – 2" transform="translate(661.849 -3664.144)">
+    <g transform="matrix(1, 0, 0, 1, -661.85, 3664.14)" filter="url(#Trazado_5)">
+      <path id="Trazado_5-2" data-name="Trazado 5" d="M1214.363,896.058c-39.842-209.02-247.947-214.523-286.677-391.28-70.159-320.209-315.508-399.873-607.954-278.49C-46.9,378.46-156.871,1088.3,266.176,1154.548,1236.087,1306.442,1234.883,1003.71,1214.363,896.058Z" transform="translate(18.26 7.51) rotate(-7)" opacity="0.704" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
