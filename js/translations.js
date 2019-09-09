@@ -1,5 +1,5 @@
 var language = {
-    eng: {
+    en: {
         title: 'Hi, I´m Julián',
         aboutMe: 'About me',
         titleAboutMe: 'About me',
@@ -27,21 +27,58 @@ var language = {
         serviceThree: 'Hosting',
         serviceDescriptionThree: 'Hosting para tus sistemas, varios paquetes.',
         titleProjects: 'Últimos trabajos',
-        }
+    }
 };
 
 
-if (navigator.language.indexOf("es") !== -1 || navigator.userLanguage.indexOf("es") !== -1){
-    title.textContent = language.es.title;
-    aboutMe.textContent = language.es.aboutMe;
-    titleAboutMe.textContent = language.es.titleAboutMe;
-    descriptionAboutMe.textContent = language.es.descriptionAboutMe;
-    titleWhatIDo.textContent = language.es.titleWhatIDo;
-    serviceOne.textContent = language.es.serviceOne;
-    serviceDescriptionOne.textContent = language.es.serviceDescriptionOne;
-    serviceTwo.textContent = language.es.serviceTwo;
-    serviceDescriptionTwo.textContent = language.es.serviceDescriptionTwo;
-    serviceThree.textContent = language.es.serviceThree;
-    serviceDescriptionThree.textContent = language.es.serviceDescriptionThree;
-    titleProjects.textContent = language.es.titleProjects;
+// if (navigator.language.indexOf("es") !== -1 || navigator.userLanguage.indexOf("es") !== -1) {
+//     title.textContent = language.es.title;
+//     aboutMe.textContent = language.es.aboutMe;
+//     titleAboutMe.textContent = language.es.titleAboutMe;
+//     descriptionAboutMe.textContent = language.es.descriptionAboutMe;
+//     titleWhatIDo.textContent = language.es.titleWhatIDo;
+//     serviceOne.textContent = language.es.serviceOne;
+//     serviceDescriptionOne.textContent = language.es.serviceDescriptionOne;
+//     serviceTwo.textContent = language.es.serviceTwo;
+//     serviceDescriptionTwo.textContent = language.es.serviceDescriptionTwo;
+//     serviceThree.textContent = language.es.serviceThree;
+//     serviceDescriptionThree.textContent = language.es.serviceDescriptionThree;
+//     titleProjects.textContent = language.es.titleProjects;
+// }
+
+
+document.querySelector('.en').addEventListener('click', changeLanguages(false));
+document.querySelector('.es').addEventListener('click', changeLanguages(true));
+
+
+function changeLanguages($es) {
+    if ($es) {
+        console.log($es);
+        title.textContent = language.es.title;
+        aboutMe.textContent = language.es.aboutMe;
+        titleAboutMe.textContent = language.es.titleAboutMe;
+        descriptionAboutMe.textContent = language.es.descriptionAboutMe;
+        titleWhatIDo.textContent = language.es.titleWhatIDo;
+        serviceOne.textContent = language.es.serviceOne;
+        serviceDescriptionOne.textContent = language.es.serviceDescriptionOne;
+        serviceTwo.textContent = language.es.serviceTwo;
+        serviceDescriptionTwo.textContent = language.es.serviceDescriptionTwo;
+        serviceThree.textContent = language.es.serviceThree;
+        serviceDescriptionThree.textContent = language.es.serviceDescriptionThree;
+        titleProjects.textContent = language.es.titleProjects;
+    } else {
+        console.log($es);
+        title.textContent = language.en.title;
+        aboutMe.textContent = language.en.aboutMe;
+        titleAboutMe.textContent = language.en.titleAboutMe;
+        descriptionAboutMe.textContent = language.en.descriptionAboutMe;
+        titleWhatIDo.textContent = language.en.titleWhatIDo;
+        serviceOne.textContent = language.en.serviceOne;
+        serviceDescriptionOne.textContent = language.en.serviceDescriptionOne;
+        serviceTwo.textContent = language.en.serviceTwo;
+        serviceDescriptionTwo.textContent = language.en.serviceDescriptionTwo;
+        serviceThree.textContent = language.en.serviceThree;
+        serviceDescriptionThree.textContent = language.en.serviceDescriptionThree;
+        titleProjects.textContent = language.en.titleProjects;
+    }
 }
